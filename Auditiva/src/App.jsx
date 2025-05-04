@@ -1,25 +1,33 @@
 import { useEffect, useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(59);
+  const [count, setCount] = useState(10);
   const [isActive, setIsActive] = useState(false);
   
-  useEffect(() => {
-    if(isActive){
-      const timer = setInterval(() =>{
-        setCount((prevCount) => {
-          prevCount - 1
-        })
-      },1000)
+  document.title = count;
 
-      return clearInterval(timer)
+  useEffect(() => {
+    let timer;
+
+    if(isActive){
+      timer = setInterval(() =>{
+        setCount((prevCount) => {
+          if(prevCount === 0){
+            setIsActive(false);
+            setCount(10);
+            alert('time is over')
+            return;
+          }else{
+            return prevCount - 1;
+          }
+        })
+      
+      },1000);
+      
     }
-    document.title = count;
-    
-  },[count])
+    return () => clearInterval(timer);
+  },[isActive]);
   
   return (
     <>
