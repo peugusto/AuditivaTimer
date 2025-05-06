@@ -20,7 +20,7 @@ function App() {
 
   useEffect(() => {
     let timer;
-
+    console.log("started");
     if(isActive){
 
       favicon.rel = 'icon';
