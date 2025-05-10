@@ -1,55 +1,17 @@
 import { useEffect, useState } from 'react'
+import Pomodoro from './components/Pomodoro'
+import ToggleTimer from './components/toggleTimer'
 import './App.css'
 
+
 function App() {
-  const [count, setCount] = useState(10);
-  const [isActive, setIsActive] = useState(false);
-  const favicon = document.getElementById('favicon')
-  if(count === 0){
-    document.title = 'time is over!!!';
-  }
-  else{
-    document.title = count;
-  }
-  
-  function toggleIco(){
-    favicon.rel = 'icon';
-    favicon.type = 'image/svg+xml';
-    favicon.href = "/public/image/ico/heal.svg";
-  }
-
-  useEffect(() => {
-    let timer;
-    console.log("started");
-    if(isActive){
-
-      favicon.rel = 'icon';
-      favicon.type = 'image/svg+xml';
-      favicon.href = "/public/image/ico/speed.svg";
-
-      timer = setInterval(() =>{
-        setCount((prevCount) => {
-          if(prevCount === 0){
-            toggleIco();
-            alert('timer is over!!!')
-            setIsActive(false);
-            setCount(10);          
-            return;
-          }else{
-            return prevCount - 1;
-          }
-        })
-      },1000);    
-    }
-
-    return () => clearInterval(timer);
-  },[isActive]);
-  
+  const [timer,setTimer] = useState(true);
   return (
-    <>
-    <h1>{count}</h1>
-    <button onClick={() => {setIsActive((prev) => !prev)}}>{isActive ? "Stop" : "Start"}</button>
-    </>
+    <div className={`timer${timer ? ' pomodoro':' timeout'}`}>
+    <ToggleTimer setTimer ={setTimer} timer={timer}/>
+    <Pomodoro type={timer ? 'timer' : "rest"}/>
+
+    </div>
   )
 }
 
