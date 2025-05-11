@@ -1,9 +1,10 @@
 {
+   "homepage": "https://peugusto.github.io/AuditivaTimer",
   "name": "package",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://github.com/peugusto/AuditivaTimer",
+ 
   "scripts": {
     "dev": "vite",
     "build": "vite build",
