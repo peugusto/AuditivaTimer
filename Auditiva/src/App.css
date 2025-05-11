@@ -123,11 +123,13 @@ ul li {
   }
   .TopBar {
     order: 1;
+    width: 313px;
   }
   .Timer {
     order: 2;
   }
   .ToDo {
+    width: 313px;
     order: 3;
   }
 }
