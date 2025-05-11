@@ -13,6 +13,7 @@ const ToDo = ({ setTasksDone, state, dispatch }) => {
         placeholder="..."
         onChange={(e) => setValueInput(e.target.value)}
         maxlength="20"
+        className="input"
       />
       <button
         onClick={() => { if (valueInput.trim() !== "")  dispatch({ type: 'add', payload: valueInput }), setValueInput("");}} id="btnADD">
