@@ -16,14 +16,12 @@ Este é um projeto pessoal desenvolvido com **React** focado em produtividade, c
 - Mudança do título da aba para exibir o tempo restante.
 - Ícones dinâmicos e interativos com **Font Awesome**.
 - Scroll automático nas tarefas quando há muitas adicionadas.
-- **React Joyride** para uma experiência interativa, guiando o usuário pelas principais funcionalidades da aplicação.
 
 ## 🛠️ Tecnologias Utilizadas
 
 - [React](https://reactjs.org/)
 - [Vite](https://vitejs.dev/)
 - [Font Awesome](https://fontawesome.com/)
-- [React Joyride](https://react-joyride.com/)
 - HTML5, CSS3
 
 ## 📱 Responsividade
