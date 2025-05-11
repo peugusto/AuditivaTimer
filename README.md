@@ -1,5 +1,6 @@
 # AuditivaTimer
 
+![AuditivaTimer](https://i.imgur.com/bBCnfgT.png)
 Este é um projeto pessoal desenvolvido com **React** focado em produtividade, combinando três ferramentas essenciais:
 
 - ⏱️ **Pomodoro Timer** — controle seu tempo de foco e descanso.
@@ -29,6 +30,8 @@ O layout adapta-se automaticamente para telas menores, reorganizando os blocos d
 1. Pomodoro Timer
 2. Painel de Contagem
 3. Lista de Tarefas
+
+![Layout Adaptado](https://i.imgur.com/VZ92kjZ.png)
 
 ## 💡 Melhorias Futuras
 
