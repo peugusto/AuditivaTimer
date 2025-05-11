@@ -1,8 +1,6 @@
 import { useEffect } from "react";
 
-const ToggleTimer = ({setTimer,timer}) =>{
-    
-
+const ToggleTimer = ({setTimer}) =>{
     
     return(
         <>

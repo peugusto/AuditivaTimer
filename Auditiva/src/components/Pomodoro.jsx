@@ -18,13 +18,9 @@ const [count, setCount] = useState(0);
     if(isActive){
       switch(type){
         case 'timer':
-          favicon.rel = 'icon';
-          favicon.type = 'image/svg+xml';
           favicon.href = "/public/image/ico/speed.svg";
           break;
         case 'rest':
-          favicon.rel = 'icon';
-          favicon.type = 'image/svg+xml';
           favicon.href = "/public/image/ico/heal.svg";
           break;
         default:

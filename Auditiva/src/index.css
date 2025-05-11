@@ -11,6 +11,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
 body {
@@ -38,7 +39,7 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #2ECC71;
+  border-color: #ffffff;
 }
 button i{
  color: white;
@@ -50,6 +51,7 @@ button i{
   border-radius: 8px;
   box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
   padding: 40px;
+  
 }
 .timer button {
   margin-left: 5px;
@@ -75,4 +77,7 @@ box-shadow: rgba(248, 246, 105, 0.644) 0px 0px 0px 3px;
 }
 .Rest:hover{
    border-color: rgba(248, 246, 105, 0.644);
+}
+.contentRight{
+  display: block;
 }
